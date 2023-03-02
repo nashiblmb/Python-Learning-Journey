@@ -1,2 +1,2 @@
-# 100-Days-of-Python
+# Python Learning Journey
 Documenting python learning journey
