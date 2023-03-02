@@ -1,4 +1,4 @@
-#Practice exercise creating a banker roulette
+#Practice exercise creating a banker roulette without use of random.choice()
 import random
 
 names_string = input("Please enter names of participants with comma seperating the names: ")
