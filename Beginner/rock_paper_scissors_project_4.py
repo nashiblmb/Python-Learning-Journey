@@ -1,4 +1,4 @@
-##Project 4 - Rock Paper Scissors game
+##Rock Paper Scissors game - Project 4
 
 #import random for computer choice 
 import random
