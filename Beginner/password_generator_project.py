@@ -1,4 +1,4 @@
-#Password Generator Project
+#Password Generator - Project 5
 """
     The project creates a randomised password according to length input by the user
     with input validation to handle only positive integers
