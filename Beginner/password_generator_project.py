@@ -1,6 +1,7 @@
 #Password Generator Project
 """
     The project creates a randomised password according to length input by the user
+    with input validation to handle only positive integers
 """
 
 import random
@@ -30,9 +31,32 @@ def password_generation():
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
     #askes for input of character amount
-    nr_letters= int(input("How many letters would you like in your password?\n")) 
-    nr_symbols = int(input(f"How many symbols would you like?\n"))
-    nr_numbers = int(input(f"How many numbers would you like?\n"))
+    #validates the input is a positive integer using loop
+    while True:
+        try:
+            nr_letters = int(input("How many letters would you like in your password?\n"))
+            if nr_letters <= 0:
+                print("Please enter a positive integer.")
+                continue
+            break
+        except ValueError:
+            print("Please enter a positive integer.")
+    while True:
+        try:
+            nr_symbols = int(input(f"How many symbols would you like?\n"))
+            if nr_symbols <= 0:
+                raise ValueError
+            break
+        except ValueError:
+            print("Please enter a positive integer for the number of symbols.")
+    while True:
+        try:
+            nr_numbers = int(input(f"How many numbers would you like?\n"))
+            if nr_numbers <= 0:
+                raise ValueError
+            break
+        except ValueError:
+            print("Please enter a positive integer for the number of numbers.")
 
     #randomises each character choice according to amount chosen
     password_letters = random.choices(letters, k=nr_letters)
