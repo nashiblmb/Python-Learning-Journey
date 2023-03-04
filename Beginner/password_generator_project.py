@@ -1,4 +1,8 @@
 #Password Generator Project
+"""
+    The project creates a randomised password according to length input by the user
+"""
+
 import random
 
 #function takes three variables and combines them to a list before shuffling them and converting to a str
