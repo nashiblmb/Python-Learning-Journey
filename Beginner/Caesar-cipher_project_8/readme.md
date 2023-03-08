@@ -1,1 +1,1 @@
-Caesar Cipher - ecryption and decryption project
+CAESAR CIPHER - ENCRYPTION AND DECRYPTION PROJECT
