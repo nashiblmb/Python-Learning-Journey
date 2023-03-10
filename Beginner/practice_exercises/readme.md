@@ -1,1 +1,2 @@
-Just my beginner level python exercises, please check previous directory for my projects
+PLEASE CHECK PREVIOUS DIRECTORY FOR PROJECTS
+BEGINNER LEVEL EXERCISES
